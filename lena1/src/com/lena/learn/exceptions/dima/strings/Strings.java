@@ -15,39 +15,7 @@ import java.util.List;
 public class Strings {
     private static final String SPACE = " ";
     public static void main(String[] args) throws IOException, InterruptedException {
-        Runtime r = Runtime.getRuntime();
-        Process p = null;
-        try {
-            p = r.exec("gedit");
-            p.waitFor();
-        } catch (Exception e) {
-            System.out.println("error");
-        }
-        System.out.println(p.exitValue());
-//        Student student = new Student();
-//        Student student1 = new Student();
-//        System.out.println(student == student1);
-//
-//        String s1 = "Hello";
-//        String s2 = new String(s1);
-//        System.out.println(s1.equals(s2));
-//        System.out.println(s1 == s2);
-
-//
-//        List<String> stringList = new ArrayList<String>();
-//        stringList.add("Lena");
-//        stringList.add("Dima");
-//
-//
-//        Collections.sort(stringList);
-//
-//        for (String s : stringList) {
-//            System.out.println(s);
-//        }
-
-//        String s = "DimaLena";
-//        System.out.println(s.toLowerCase());
-
-
+        Student student = new Student();
+        System.out.println(student.getClass().getSuperclass());
     }
 }
